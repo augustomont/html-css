@@ -1,0 +1,37 @@
+@charset "utf-8";
+body{
+background-color:#BF5315 ;
+font-family: 'Times New Roman', Times, serif;
+text-align: center;
+}
+div#inicial{
+    margin: auto;
+    background-color:#F2DF80 ;
+    border: #BF5315 solid 100px;
+    width: 300px;
+    
+}
+div.container{
+    margin: auto;
+    text-align: center;
+    width: 300px;
+}
+li{
+    
+    text-align:center;
+}
+li:hover{
+    background-color:#D99F59;
+}
+li:hover:before{
+    content: "☞";
+    color:#F2DF80;
+}
+.paleta{
+    background-color: #F2DF80;
+    background-color:#BF946F ;
+    background-color:#D99F59 ;
+    background-color: #F29422;
+    color: #BF5315;
+
+}

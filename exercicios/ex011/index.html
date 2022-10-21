@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REdimencionandoimagens</title>
+</head>
+<body>
+    <h1>Redimencionando imagens</h1>
+
+    <picture>
+        <source media="(max-width: 500px)" srcset="imagens/preta-p.png" type="image/png">
+        <source media="(max-width:1000px )" srcset="imagens/preta-g.png" type="image/png">
+        <img src="imagens/mulher-loura-nova-bonita-com-olhos-azuis-18347174.jpg" alt="mulher-loura-nova-bonita-com-olhos-azuis-18347174">
+    </picture>
+
+    <h2>Teste de audio</h2>
+    <p>
+        <audio preload="metadata" autoplay controls loop>
+            <source src="audios/Leslie's Strut (Sting) - John Deley and the 41 Players.mp3" type="audio/mpeg">
+        </audio>
+    </p>
+</body>
+</html>
