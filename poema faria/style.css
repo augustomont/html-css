@@ -11,29 +11,90 @@
     --fonte1: Verdana, Geneva, Tahoma, sans-serif;
     --fonte2: 'Passion One', cursive;
     --fonte3: 'Sriracha', cursive;
+    --corfundo01: #006400;
+    --corletra: white;
+    --corletra02: black;
+    --corfunto02: #f5f5cd;
+    --cor: #e2725b;
 }
 
-body{
+html, body{
+    min-height: 100vh;
+    background-color: var(--corfunto02);
     font-family: var(--fonte1);
+    color: var(--corletra02);
+}
+
+a{
+    text-decoration: none;
+    color: var(--corletra);
+}
+a:hover{
+    font-size: 17px;
+    font-weight: bold;
+    transition: 0.5s;
 }
 
 header{
-    background-color: black;
-    color: white;
+    background-color:var(--corfundo01) ;
+    color: var(--corletra);
     text-align: center;
+    height: 200px;
+    padding-top: 50px;
+    padding-bottom: -50px;
 }
 
 header>h1{
     font-family: var(--fonte2);
+    font-variant: small-caps;
+    font-size: 6vh;
 }
+header>p{
+    margin-top: 20px;
+    padding: 20px;
+}
+
+
 section{
     font-size: 3vw;
     font-family: var(--fonte3);
     padding-top: 10vh;
     padding-bottom: 10vh;
-    padding-left: 20px;
+    padding-left: 30px;
+    line-height: 2em;
+}
+section.fundo{
+    background-color: rgb(51, 51, 51);
+    color: var(--corletra);
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.747);
+    background-position: right center;
+    background-size: cover;
+    
+}
+section.fundo>p{
+    display: inline-block;
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.541);
+    text-shadow: 1px 1px 0px black;
+}
+p.normal{
+    margin-top: 2em;
 }
 
 .fundo#img01{
-    background-image: url(imagens/Fernanda\ Faria\ \(@feh.faria\)\ •\ Fotos\ e\ vídeos\ do\ Instagram.html);
+    background-image: url(imagens/janela.jpg);
+    background-size:cover;
+    background-attachment: fixed;
+}
+.fundo#img02{
+    background-image: url(imagens/estante.jpg);
+    background-size: cover;
+
+}
+
+footer{
+    background-color: var(--corfundo01);
+    color: var(--corletra);
+    text-align: center;
+    padding: 10px;
 }
