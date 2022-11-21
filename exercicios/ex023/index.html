@@ -5,8 +5,41 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tabelas</title>
+    <style>
+        table{
+            font-family: 'Times New Roman', Times, serif;
+            border-collapse: collapse;
+        }
+        td{
+            padding: 4px;
+            width: 200px;
+            border: 1px solid black;
+        }
+        .linha{
+            background-color: #80808033;
+        }
+        .dado{
+            background-color: #ffff0077;
+        }
+    </style>
 </head>
 <body>
-    
+    <table>
+        <tr>
+            <td>A1</td>
+            <td>A2</td>
+            <td>A3</td>
+        </tr>
+        <tr class="linha">
+            <td>B1</td>
+            <td>B2</td>
+            <td>B3</td>
+        </tr>
+        <tr>
+            <td>C1</td>
+            <td class="dado">C2</td>
+            <td>C3</td>
+        </tr>
+    </table>
 </body>
 </html>
