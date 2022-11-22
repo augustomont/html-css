@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela grande</title>
+    <style>
+        table{
+            border-collapse: collapse;
+            width: 500px;
+            position: relative;
+        }
+        thead >tr> th {
+            position: sticky;
+            top: 0px;
+            background-color: #000000;
+            color: #ffff;
+        }
+        th,td,caption{
+            border: 1px solid #000000;
+            height: 30px;
+        }
+        caption{
+            vertical-align: middle;
+            padding: 10px;
+            background-color: #000000d7;
+            color: white;
+            font-weight: bolder;
+        }
+        th{
+            background-color: #80808054;
+        }
+        tr:nth-child(2n){
+            background-color: #7dfa005b;
+        }
+        .pos,td{
+            text-align: center;
+        }
+        .num{
+            text-align: right;
+            padding-right: 8px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Anatomia das Tabelas
+        Caption
+    thead
+        tr, td, th
+    tbody
+        tr, td, th
+    tfoot
+        tr, td, th
+
+        scope= row, col
+    -->
+
+    <table>
+        <caption>População Brasileira</caption>
+        <thead>
+            <th scope="col">Posição</th>
+            <th scope="col">Estado</th>
+            <th scope="col">População</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="pos">1</td>
+                <td>São Paolo</td>
+                <td class="num">46 649 132</td>
+            </tr>
+            <tr>
+                <td class="pos">2</td>
+                <td>Minas Gerais</td>
+                <td class="num">21 411 923</td>
+            </tr>
+            <tr>
+                <td class="pos">3</td>
+                <td>Rio de Janeiro</td>
+                <td class="num">17 463 349</td>
+            </tr>
+            <tr>
+                <td class="pos">4</td>
+                <td>Bahia</td>
+                <td class="num">14 985 284</td>
+            </tr>
+            <tr>
+                <td class="pos">1</td>
+                <td>São Paolo</td>
+                <td class="num">46 649 132</td>
+            </tr>
+            <tr>
+                <td class="pos">2</td>
+                <td>Minas Gerais</td>
+                <td class="num">21 411 923</td>
+            </tr>
+            <tr>
+                <td class="pos">3</td>
+                <td>Rio de Janeiro</td>
+                <td class="num">17 463 349</td>
+            </tr>
+            <tr>
+                <td class="pos">4</td>
+                <td>Bahia</td>
+                <td class="num">14 985 284</td>
+            </tr>
+            <tr>
+                <td class="pos">1</td>
+                <td>São Paolo</td>
+                <td class="num">46 649 132</td>
+            </tr>
+            <tr>
+                <td class="pos">2</td>
+                <td>Minas Gerais</td>
+                <td class="num">21 411 923</td>
+            </tr>
+            <tr>
+                <td class="pos">3</td>
+                <td>Rio de Janeiro</td>
+                <td class="num">17 463 349</td>
+            </tr>
+            <tr>
+                <td class="pos">4</td>
+                <td>Bahia</td>
+                <td class="num">14 985 284</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <th class="pos"></th>
+            <th scope="row"><strong>Total População</strong></th>
+            <th class="num"><strong>215 381 190</strong></th>
+        </tfoot>
+    </table>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla, voluptates aut? Itaque vero beatae illum nam eos rem quasi tenetur assumenda accusantium consectetur labore, eius est? Illum, ut. Deleniti, velit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt assumenda reprehenderit dolor quisquam dignissimos exercitationem, molestiae ad vero provident officia earum minus harum, cumque ipsam numquam, voluptas totam blanditiis neque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero culpa explicabo beatae voluptatem. Quia commodi, delectus placeat nam error corrupti laborum voluptas nesciunt reiciendis cumque, aperiam corporis praesentium? Maiores, perspiciatis.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla, voluptates aut? Itaque vero beatae illum nam eos rem quasi tenetur assumenda accusantium consectetur labore, eius est? Illum, ut. Deleniti, velit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt assumenda reprehenderit dolor quisquam dignissimos exercitationem, molestiae ad vero provident officia earum minus harum, cumque ipsam numquam, voluptas totam blanditiis neque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero culpa explicabo beatae voluptatem. Quia commodi, delectus placeat nam error corrupti laborum voluptas nesciunt reiciendis cumque, aperiam corporis praesentium? Maiores, perspiciatis.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla, voluptates aut? Itaque vero beatae illum nam eos rem quasi tenetur assumenda accusantium consectetur labore, eius est? Illum, ut. Deleniti, velit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt assumenda reprehenderit dolor quisquam dignissimos exercitationem, molestiae ad vero provident officia earum minus harum, cumque ipsam numquam, voluptas totam blanditiis neque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero culpa explicabo beatae voluptatem. Quia commodi, delectus placeat nam error corrupti laborum voluptas nesciunt reiciendis cumque, aperiam corporis praesentium? Maiores, perspiciatis.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla, voluptates aut? Itaque vero beatae illum nam eos rem quasi tenetur assumenda accusantium consectetur labore, eius est? Illum, ut. Deleniti, velit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt assumenda reprehenderit dolor quisquam dignissimos exercitationem, molestiae ad vero provident officia earum minus harum, cumque ipsam numquam, voluptas totam blanditiis neque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero culpa explicabo beatae voluptatem. Quia commodi, delectus placeat nam error corrupti laborum voluptas nesciunt reiciendis cumque, aperiam corporis praesentium? Maiores, perspiciatis.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla, voluptates aut? Itaque vero beatae illum nam eos rem quasi tenetur assumenda accusantium consectetur labore, eius est? Illum, ut. Deleniti, velit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt assumenda reprehenderit dolor quisquam dignissimos exercitationem, molestiae ad vero provident officia earum minus harum, cumque ipsam numquam, voluptas totam blanditiis neque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero culpa explicabo beatae voluptatem. Quia commodi, delectus placeat nam error corrupti laborum voluptas nesciunt reiciendis cumque, aperiam corporis praesentium? Maiores, perspiciatis.</p>
+</body>
+</html>
