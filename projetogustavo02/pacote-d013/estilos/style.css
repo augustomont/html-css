@@ -41,3 +41,21 @@ iframe#tela{
     height: 469px;
     /*background-size: cover; é aplicado no arquivo de origem (home.html)*/
 }
+
+section#redes-sociais{
+    text-align: right;
+}
+
+section#redes-sociais img {
+    width: 50px;
+    margin: 10px;
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px #0000005b;
+}
+
+section#redes-sociais img:hover{
+    border: 2px solid lightgreen;
+    transform: translate(-2px, -2px );
+    box-shadow: 5px 5px 10px black;
+    transition: transform 3s, border 0.2s;
+}
