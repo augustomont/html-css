@@ -6,7 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Iframe dentro da Pagina</title>
 </head>
-<body>
+<body> <!--SEGURANÇA
+                Sempre use o sandbox e referrerpolicy para manter a segurança do site.
+                    sandbox = bloqueia açoes do usuario no iframe
+                    referrerpolicy = bloqueia o site de coletar dados-->
     <header>
         <h1>Exemplo de iframe dentro da Pagina</h1>
     </header>
@@ -20,7 +23,7 @@
         </ul>
         <h3>Aqui em baixo você verá a miniatura da Página escolida</h3>
         <p>
-            <iframe name="frame" srcdoc="<h1>Selecione a Opção desejada<h1>" frameborder="0" height="300px" width="600px">Seu navegador não é compativel</iframe>
+            <iframe name="frame" srcdoc="<h1>Selecione a Opção desejada<h1>" frameborder="0" height="300px" width="600px" sandbox="sandbox" referrerpolicy="no-referrer">Seu navegador não é compativel</iframe>
         </p>
         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi veniam autem voluptas qui rem debitis, cum enim repellendus delectus assumenda, quasi cupiditate possimus ut odit accusantium minus ea nihil aut?</p>
         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut aperiam nam veniam nobis ea saepe vel aspernatur in adipisci veritatis harum similique impedit quo unde, aliquam tenetur cumque. Possimus, quidem. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum nesciunt eligendi est porro quae itaque quo, a deleniti, consequuntur unde, neque minima similique temporibus fugiat repudiandae nihil mollitia aperiam optio!</p>
