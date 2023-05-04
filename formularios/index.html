@@ -91,7 +91,9 @@
             <legend>Satisfação</legend>
             <p>
                 Qual seu nivel de Satisfação?
-                <input type="range" name="satis" id="isatis" max="100" value="80">
+                <input type="range" name="satis" id="isatis" max="100" value="80" oninput="ival.innerHTML = Number(isatis.value)">
+                <!-- output é pra mostrar o valor do input -->
+                <output id="ival">80</output>
             </p>
             <p>
                 Escolha uma cor
