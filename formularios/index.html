@@ -9,6 +9,8 @@
 <body>
     <!-- Form cria um formulario, e agrupa tudo em uma logica -->
     <form action="script.js" method="get"> <!--POST mostra, GET esconde-->
+        <!-- get tem um limite de 3 mil bytes. quando for armazenar mais informações, use o POST -->
+
         <!-- FieldSet separa um grupo de dados dentro de um formulario -->
         <fieldset> 
             <!-- Legend cria uma legenda de titulo para o FieldSet criado para separar uma parte do formulario -->
@@ -52,6 +54,30 @@
                 <label for="css">CSS</label>
             </p>
         </fieldset>
+        <fieldset>
+            <p>
+                <!-- Jeito de fazer sem usar input. Usando SELECT -->
+                <label for="iestado">Estado</label>
+                <select name="estado" id="iestado">
+                    <option value="deseable"selected>---Escolha---</option>
+                    <option value="ac">Acre</option>
+                    <option value="bh">Bahia</option>
+                    <option value="rj">Rio de Janeiro</option>
+                    <option value="sp">São Paulo</option>
+                </select>
+            </p>
+            <p>
+                <!-- Colocando opções dentro de uma caixa de texto. Usando DATALIST -->
+                <label for="iprof">Profissão</label>
+                <input type="text" name="prof" id="iprof" list="liprof" placeholder="Selecione">
+                <datalist id="liprof">
+                    <option value="Administrador"></option>
+                    <option value="Advogado"></option>
+                    <option value="Médico"></option>
+                    <option value="Engenheiro"></option>
+                </datalist>
+            </p>
+        </fieldset>
         <p>
             <label for="isenha">Senha:</label>
             <input type="password" name="senha" id="isenha" placeholder="Digite sua senha" required minlength="8" autocomplete="current-password">
@@ -69,7 +95,11 @@
             </p>
             <p>
                 Escolha uma cor
-                <input type="color" name="cor" id="icor">
+                <input type="color" name="cor" id="icor" placeholder="red">
+            </p>
+            <p>
+                Deixe um comentário ou sugestão <br>
+                <textarea name="coment" id="icoment" cols="30" rows="10" placeholder="Críticas e Sugestões"></textarea>
             </p>
         </fieldset>
         <p>
