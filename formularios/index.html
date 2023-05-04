@@ -8,7 +8,7 @@
 </head>
 <body>
     <!-- Form cria um formulario, e agrupa tudo em uma logica -->
-    <form action="script.js" method="get">
+    <form action="script.js" method="get"> <!--POST mostra, GET esconde-->
         <!-- FieldSet separa um grupo de dados dentro de um formulario -->
         <fieldset> 
             <!-- Legend cria uma legenda de titulo para o FieldSet criado para separar uma parte do formulario -->
@@ -29,8 +29,9 @@
         </fieldset>
         <fieldset>
             <legend>Sexo</legend>
-            <p>
-                <input type="radio" name="sexo" id="imasculino">
+            <p> 
+                <!-- Radio usado pra marcar apenas uma opção -->
+                <input type="radio" name="sexo" id="imasculino" required>
                 <label for="imasculino">Masculino</label>
                 <input type="radio" name="sexo" id="ifeminino">
                 <label for="ifeminino">feminino</label>
@@ -39,6 +40,7 @@
         <fieldset>
             <legend>Habilidades</legend>
             <p>
+                <!-- CheckBox usado pra marcar varios -->
                 <input type="checkbox" name="Habilidades" id="javascript"> <label for="javascript">JavaScript</label>
             </p>
             <p>
@@ -58,6 +60,22 @@
             <label for="notas">Notas:</label>
             <input type="number" name="" id="notas" min="0" max="10" step="0.1" placeholder="Média">
             <input type="month" name="mes" id="notas" value="2023-01">
+        </p>
+        <fieldset>
+            <legend>Satisfação</legend>
+            <p>
+                Qual seu nivel de Satisfação?
+                <input type="range" name="satis" id="isatis" max="100" value="80">
+            </p>
+            <p>
+                Escolha uma cor
+                <input type="color" name="cor" id="icor">
+            </p>
+        </fieldset>
+        <p>
+            <!-- Quando quiser por a opção input: File, precisa por no seletor <form> a opção method: "POST" -->
+            Escolher foto de Perfil
+            <input type="file" name="foto" id="ifoto">
         </p>
         <p>
             <input type="submit" value="Enviar">
